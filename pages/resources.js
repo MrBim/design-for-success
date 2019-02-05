@@ -32,17 +32,11 @@ export default class Entries extends React.Component {
         return (
             <Layout>
                 <h1>Resources for Success</h1>
-                {/* <Entries db={resources}/> */}
-                {resources.map(resource => 
-                    // <li key={resource.id}>
-                    //     <h3 className="title">{resource.name}</h3>
-                    //     <h4>{resource.type}</h4>
-                    //     <p>{resource.description}</p>
-                    //     <a>{resource.link}</a>
-                    // </li>
-
-                    <Entry db={resource} ></Entry>
-                )}
+                <ul>
+                    {resources.map(resource => 
+                        <Entry db={resource} ></Entry>
+                    )}
+                </ul>
             </Layout>
         )
     }
