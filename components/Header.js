@@ -34,6 +34,9 @@ const Header = () => (
           <Link href="/resources">
             <a style={linkStyle}>Resources</a>
           </Link>
+          <Link href="/add-resource">
+            <a style={linkStyle}>Add Resource</a>
+          </Link>
         </div>        
         
     </div>
